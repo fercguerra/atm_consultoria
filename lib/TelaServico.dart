@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class TelaServico extends StatefulWidget {
-  const TelaServico({ Key? key }) : super(key: key);
+  const TelaServico({Key? key}) : super(key: key);
 
   @override
   State<TelaServico> createState() => _TelaServicoState();
@@ -10,8 +10,7 @@ class TelaServico extends StatefulWidget {
 class _TelaServicoState extends State<TelaServico> {
   @override
   Widget build(BuildContext context) {
-    return
-      Scaffold(
+    return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text("Serviços"),
@@ -21,6 +20,7 @@ class _TelaServicoState extends State<TelaServico> {
         child: Container(
           padding: EdgeInsets.all(16),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
@@ -28,7 +28,7 @@ class _TelaServicoState extends State<TelaServico> {
                   Padding(
                     padding: EdgeInsets.only(left: 10),
                     child: Text(
-                      "Sobre a Empresa",
+                      "Nossos Serviços ",
                       style: TextStyle(fontSize: 20, color: Colors.deepOrange),
                     ),
                   ),
@@ -36,9 +36,16 @@ class _TelaServicoState extends State<TelaServico> {
               ),
               Padding(
                 padding: EdgeInsets.only(top: 16),
-                child: const Text(
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."),
-              )
+                child: const Text("Consultoria"),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 16),
+                child: const Text("Cálculo de Preços"),
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 16),
+                child: const Text("Acompanhamento de Projetos"),
+              ),
             ],
           ),
         ),
@@ -46,4 +53,3 @@ class _TelaServicoState extends State<TelaServico> {
     );
   }
 }
-
